@@ -4,7 +4,7 @@ import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState("sunrise");
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
@@ -14,11 +14,10 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    console.log(apiUrl);
+    axios.get(apiUrl).then(handleResponse);
   }
-
-  let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-  console.log(apiUrl);
-  axios.get(apiUrl).then(handleResponse);
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
