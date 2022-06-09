@@ -14,8 +14,8 @@ export default function Phonetic(props) {
         >
           Listen
         </a>
-
-        {props.phonetic.text}
+        {""}
+        <span className="text">{props.phonetic.text}</span>
       </div>
     );
   } else {
