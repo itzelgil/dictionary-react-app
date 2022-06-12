@@ -13,7 +13,24 @@ export default function App() {
           <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="text-center footer">
-          <small>Coded by Itzel Gil</small>
+          <small>
+            <a
+              href="https://github.com/itzelgil/dictionary-react-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open source-code
+            </a>{" "}
+            by{" "}
+            <a
+              href="https://ubiquitous-gnome-f8865b.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Itzel Gil
+            </a>
+          </small>
         </footer>
       </div>
     </div>
