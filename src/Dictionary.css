@@ -1,9 +1,10 @@
-.Dictionary h2 {
+.Dictionary .wordSearch {
   font-weight: bold;
   margin-bottom: 20px;
+  color: #a96dce;
 }
 .Dictionary section {
-  background: white;
+  background: #f7f7f2;
   padding: 30px;
   margin: 10px;
   border-radius: 16px;
