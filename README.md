@@ -16,5 +16,7 @@ Dictionary project made for the Plus workshop, it pulls the data from the Free D
 - It also has a sound reproducer, when you can hear how the word should be pronounced
 
 **Dev Dependencies** 
+
 -Prettier
+
 -React JS
